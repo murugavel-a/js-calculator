@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="icon" href="icons8-calculator-48.png" />
+
+    <link rel="stylesheet" href="js-calculator.css" />
+  </head>
+  <body>
+    <section class="calculator">
+      <div class="js-display">
+        <input type="text" id="display" readonly />
+      </div>
+      <hr />
+      <div class="button-keys">
+        <button class="js-button top-operator" onclick="clearDisplay()">
+          c
+        </button>
+        <button class="js-button top-operator" onclick=" plusOrMinus()">
+          +/-
+        </button>
+        <button class="js-button top-operator" onclick="toDisplay('%')">
+          %
+        </button>
+        <button class="js-button side-operator" onclick="toDisplay('/')">
+          /
+        </button>
+        <button class="js-button" onclick="toDisplay('7')">7</button>
+        <button class="js-button" onclick="toDisplay('8')">8</button>
+        <button class="js-button" onclick="toDisplay('9')">9</button>
+        <button
+          class="js-button side-operator multiple"
+          onclick="toDisplay('*')"
+        >
+          *
+        </button>
+        <button class="js-button" onclick="toDisplay('4') ">4</button>
+        <button class="js-button" onclick="toDisplay('5')">5</button>
+        <button class="js-button" onclick="toDisplay('6')">6</button>
+        <button class="js-button side-operator" onclick="toDisplay('-')">
+          -
+        </button>
+        <button class="js-button" onclick="toDisplay('1')">1</button>
+        <button class="js-button" onclick="toDisplay('2')">2</button>
+        <button class="js-button" onclick="toDisplay('3')">3</button>
+        <button class="js-button side-operator" onclick="toDisplay('+')">
+          +
+        </button>
+
+        <button class="js-button zero" onclick="toDisplay('0')">0</button>
+        <button class="js-button dot" onclick="toDisplay('.')">.</button>
+        <button class="js-button side-operator" onclick="calculate()">=</button>
+      </div>
+
+      <script src="js-calculator.js"></script>
+    </section>
+  </body>
+</html>
